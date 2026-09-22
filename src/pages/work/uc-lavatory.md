@@ -2,8 +2,8 @@
 layout: ../../layouts/CaseStudy.astro
 title: "UC-Lavatory: Campus restroom reviews"
 category: Web development · UCLA CS35L
-summary: A five-person course project combining a campus map and restroom reviews in a React, Express, and MySQL application. My work focused on the interactive map and review interface.
-role: Map and frontend contributor
+summary: A five-person course project combining a campus map and restroom reviews in a React, Express, and MySQL application. I contributed to application design discussions, map features, and the review interface.
+role: Application design discussions and frontend implementation
 period: September–December 2022
 team: Five-person team
 tools: [JavaScript, React, React Leaflet, GeoLib, Axios, Express, MySQL]
@@ -21,9 +21,11 @@ note: An earlier course project developed for local use. Source code and contrib
 
 Our five-person team built UC-Lavatory to help students find campus restrooms and read reviews by building. The application combined an interactive React Leaflet map, building-specific review pages, and a form for submitting ratings and comments.
 
-The team’s full-stack application used React for the interface, an Express API for requests, and MySQL for persistent review data. Users could browse reviews, filter by floor and restroom category, sort by rating or date, and view average ratings. My contribution centered on the map and frontend; teammates handled most backend development.
+The team’s full-stack application used React for the interface, an Express API for requests, and MySQL for persistent review data. Users could browse reviews, filter by floor and restroom category, sort by rating or date, and view average ratings. I participated in design discussions about how the application’s components worked together, alongside implementing map features and review interface improvements.
 
 ## My contribution
+
+I was involved in understanding and discussing the application end to end, including how the React interface, Express API, and MySQL data layer supported the review workflow. My implementation work included:
 
 - Built the interactive campus map with building markers and popups, then corrected marker behavior and adjusted the map layout.
 - Added a movable marker that users positioned by clicking the map, with a popup showing the nearest mapped building and its distance.
@@ -39,6 +41,6 @@ The feature connected map interactions, coordinate data, distance calculations, 
 
 ## Project context
 
-UC-Lavatory was an early team web-development project. It gave me experience contributing features to a shared application, integrating frontend requests with the team’s API, and refining an interface as other components changed.
+UC-Lavatory was an early team web-development project. It gave me experience contributing features to a shared application, discussing application design, integrating frontend requests with the team’s API, and refining an interface as other components changed.
 
 The repository preserves the final team code and my contributions, including interface work completed after the locally saved December 1 snapshot. The application was developed for local use and would need maintenance before being offered as a public service.
