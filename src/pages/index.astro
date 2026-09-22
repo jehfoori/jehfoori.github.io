@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Layout>
+  <section class="hero shell">
+    <div class="eyebrow">Software engineer · UCLA MS, 2026</div>
+    <h1>Jeffrey Huang<br /><span>Software Engineer</span></h1>
+    <div class="hero-bottom"><p>I’m Jeffrey, a software engineer interested in backend systems and infrastructure, with experience across full-stack development and applied AI. My work spans HTTP servers, internal developer tools, model evaluation, and interactive simulations.</p><a class="text-link" href="mailto:j.huang.hxc@gmail.com">Contact <span aria-hidden="true">↗</span></a></div>
+    <div class="hero-footnote">Seeking software engineering opportunities <span>BS + MS in Computer Science · UCLA</span></div>
+  </section>
+  <section id="experience" class="experience-section shell"><div class="section-heading"><h2>Professional experience</h2><span>2024 — 2025</span></div>
+    <a class="experience-row" href={`${base}experience/hpe/`}><div class="experience-meta">Jun — Sep 2025<span>Cloud Engineering Intern</span></div><div><h3>Hewlett Packard Enterprise</h3><p>Built a RAGAS-based evaluation scaffold for an internal documentation assistant, then contributed to retrieval improvements and refactoring beyond the initial prototype.</p><div class="tags"><span>Python</span><span>RAGAS</span><span>LangChain / LangGraph</span><span>Docling</span></div></div><span class="row-arrow" aria-hidden="true">↗</span></a>
+    <a class="experience-row" href={`${base}experience/twygs/`}><div class="experience-meta">Jul — Sep 2024<span>Software Engineering Intern</span></div><div><h3>Odele Technology / Twygs</h3><p>Contributed frontend improvements to a creator monetization platform through sprint-based development, from password validation to responsive layouts and onboarding flows.</p><div class="tags"><span>React</span><span>Next.js</span><span>Chakra UI</span></div></div><span class="row-arrow" aria-hidden="true">↗</span></a>
+  </section>
+  <section id="work" class="work-section shell">
+    <div class="section-heading"><h2>Selected work</h2><span>01 — 04</span></div>
+    <a class="project-card server-card" href={`${base}work/cpp-server/`}>
+      <div class="card-copy"><div class="eyebrow">01 / Backend engineering</div><h3>A modular C++<br />HTTP server</h3><p>Routing, request handlers, and testable server components—built with a team through rotating technical leadership and code review.</p><div class="tags"><span>C++</span><span>Boost.Asio</span><span>Google Test</span><span>Docker</span></div><span class="card-cta">Explore the project <span aria-hidden="true">↗</span></span></div>
+      <div class="server-diagram" role="img" aria-label="Simplified request handling: an HTTP request reaches the router, which selects a request handler to build the response.">
+        <div class="diagram-caption" aria-hidden="true">Request handling</div>
+        <div class="request-flow" aria-hidden="true">
+          <div class="request-step"><strong>HTTP request</strong><span>Method &amp; URL path</span></div>
+          <span class="request-arrow">↓</span>
+          <div class="request-step"><strong>Router</strong><span>Selects the handler</span></div>
+          <span class="request-arrow">↓</span>
+          <div class="request-step"><strong>Request handler</strong><span>Builds the HTTP response</span></div>
+        </div>
+      </div>
+    </a>
+    <div class="project-grid">
+      <a class="project-card compact-card" href={`${base}work/llm-retrieval/`}><div class="mini-visual retrieval-visual" aria-hidden="true"><div>PASSKEY_RECORD[alpha] = 4817</div><div class="muted-record">PASSKEY_RECORD[beta] = 2053</div><div class="muted-record">PASSKEY_RECORD[gamma] = 9162</div><div class="query-record">Query: alpha <span>4817</span></div></div><div class="card-copy"><div class="eyebrow">02 / Independent capstone</div><h3>Retrieval in efficient<br />language models</h3><p>A controlled study of efficient language models, with a focus on distractors, evaluation design, and diagnosing unexpected results.</p><div class="tags"><span>Python</span><span>Model evaluation</span><span>GPU experiments</span></div><span class="card-cta">Read the study <span aria-hidden="true">↗</span></span></div></a>
+      <a class="project-card compact-card" href={`${base}work/evacuation/`}><div class="mini-visual simulation-visual"><img src={`${base}images/evacuation-flow-field.png`} alt="City simulation with evacuation routes drawn through the streets" width="1280" height="720" loading="lazy" /></div><div class="card-copy"><div class="eyebrow">03 / Simulation engineering</div><h3>City evacuation<br />simulation</h3><p>A Unity evacuation simulation combining navigation, crowd behavior, and predator–prey interactions in a shared city environment.</p><div class="tags"><span>Unity / C#</span><span>Pathfinding</span><span>Multi-agent simulation</span></div><span class="card-cta">See the simulation <span aria-hidden="true">↗</span></span></div></a>
+    </div>
+    <a class="project-card earlier-project" href={`${base}work/uc-lavatory/`}>
+      <div><div class="eyebrow">04 / Web development · 2022</div><h3>UC-Lavatory: Campus restroom reviews</h3><p>A five-person team’s React, Express, and MySQL application. My contributions focused on the interactive campus map, nearest-building lookup, and review interface.</p><div class="tags"><span>React</span><span>React Leaflet</span><span>Express</span><span>MySQL</span></div><span class="card-cta">Explore the project <span aria-hidden="true">↗</span></span></div>
+    </a>
+  </section>
+</Layout>

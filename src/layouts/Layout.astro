@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+const { title = 'Jeffrey Huang — Software Engineer', description = 'Software engineer focused on backend systems, infrastructure, and thoughtful experimentation. UCLA MS Computer Science, 2026.' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#193bce" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header shell">
+      <a class="wordmark" href={base} aria-label="Jeffrey Huang home"><span class="monogram">JH</span><span>Jeffrey Huang</span></a>
+      <nav aria-label="Main navigation">
+        <a href={`${base}#work`}>Work</a><a href={`${base}#experience`}>Experience</a><a href={`${base}resume.docx`}>Résumé</a>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer shell">
+      <div><a class="footer-name" href="mailto:j.huang.hxc@gmail.com">Contact</a><p>j.huang.hxc@gmail.com</p></div>
+      <div class="footer-links"><a href="https://www.linkedin.com/in/jeffreyhuang0511/">LinkedIn</a><a href="https://github.com/jehfoori">GitHub</a><a href={`${base}resume.docx`}>Résumé · DOCX</a></div>
+      <p class="footer-note">Jeffrey Huang · UCLA Computer Science</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+
+# Local editorial material
+PORTFOLIO-COPY.md
+REVIEW-NOTES.md
+.env
+.env.*
